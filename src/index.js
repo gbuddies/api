@@ -15,7 +15,7 @@ app.use(cors({
     origin: '*'
 }));
 app.use(express.json());
-app.use("/g-chat", router);
+app.use(router);
 app.use("/files", express.static(path.join(process.cwd(), "files")));
 app.use(globalErrHandler);
 
