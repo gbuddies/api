@@ -1,13 +1,13 @@
 import {
     authorizeUser,
     registerUser
-} from './auth.services.js';
+} from './services.js';
 
 import jwt from 'jsonwebtoken';
-import { verifyOtpService, storeOtp } from "./auth.services.js";
+import { verifyOtpService, storeOtp } from "./services.js";
 import crypto from "crypto";
 import { RegistrationFailed } from '../../error_classes/defined_errors.js';
-import { transporter } from '../api_utils/mailer.js';
+import { transporter } from '../utils/mailer.js';
 
 export async function handleUserReg(req, res, next) {
     try {

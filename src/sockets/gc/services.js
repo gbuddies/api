@@ -1,4 +1,4 @@
-import pool from "../../endpoints/api_utils/db.js";
+import pool from "../../endpoints/utils/db.js";
 import { DatabaseOrServerError } from "../../error_classes/defined_errors.js";
 
 

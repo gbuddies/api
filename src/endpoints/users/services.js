@@ -4,9 +4,9 @@ import {
     FrndReqTransactionFailed,
     InvalidUser,
     NotFound
-} from "../../error_classes/defined_errors.js";
+} from "../../errors/defined_errors.js";
 
-import pool from "../api_utils/db.js";
+import pool from "../utils/db.js";
 
 export async function getUser(user_id, req_user_id) {
     try {

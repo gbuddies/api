@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { authorizeToken } from "../auth/auth.middleware.js";
+import { authorizeToken } from "../auth/middleware.js";
 
 import {
     createWriter,

@@ -1,17 +1,17 @@
 import { Router } from "express";
-import { verifyOtp } from "./auth.controller.js";
-import { sendOtp } from "./auth.controller.js";
+import { verifyOtp } from "./controller.js";
+import { sendOtp } from "./controller.js";
 
 import { 
     handleUserLogin, 
     handleUserReg 
-} from "./auth.controller.js";
+} from "./controller.js";
 
 import { 
     authorizeToken,
     validateLoginUser, 
     validateRegUser 
-} from "./auth.middleware.js";
+} from "./middleware.js";
 
 const auth_router = Router();
 

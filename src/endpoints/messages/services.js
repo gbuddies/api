@@ -1,5 +1,5 @@
 import { DatabaseOrServerError, InvalidUser } from "../../error_classes/defined_errors.js";
-import pool from "../api_utils/db.js";
+import pool from "../utils/db.js";
 import UMS from "./UMS.js";
 
 export async function getGlobalChats(user_id, last_seen_msg) {

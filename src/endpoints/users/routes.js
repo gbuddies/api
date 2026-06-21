@@ -20,8 +20,8 @@ import {
     handleSearchFriend
 } from "./users.controller.js";
 
-import { authorizeToken } from "./../auth/auth.middleware.js";
-import { upload } from "../api_utils/file_storage.js";
+import { authorizeToken } from "../auth/middleware.js";
+import { upload } from "../utils/storage.js";
 
 const user_router = Router();
 

@@ -1,26 +1,27 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "muna devs",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "bcrypt": "^6.0.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "emoji-picker-react": "^4.16.1",
-    "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3",
-    "multer": "^2.0.2",
-    "nodemailer": "^7.0.13",
-    "pg": "^8.16.3",
-    "socket.io": "^4.8.3",
-    "uuid": "^13.0.0",
-    "zxcvbn": "^4.4.2"
-  }
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "license": "ISC",
+    "author": "muna devs",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.108.2",
+        "bcrypt": "^6.0.0",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.3",
+        "emoji-picker-react": "^4.16.1",
+        "express": "^5.2.1",
+        "jsonwebtoken": "^9.0.3",
+        "multer": "^2.0.2",
+        "nodemailer": "^9.0.1",
+        "pg": "^8.16.3",
+        "socket.io": "^4.8.3",
+        "uuid": "^13.0.0",
+        "zxcvbn": "^4.4.2"
+    }
 }

@@ -7,16 +7,16 @@ import {
 } from '../error_classes/defined_errors.js';
 
 import { getUser } from '../endpoints/users/users.services.js';
-import { globalChat } from './global_socket/global_chat.socket.js';
-import { roomChat } from './room_socket/room_chat.socket.js';
-import { DM } from './dm_socket/dm_socket.socket.js';
+import { globalChat } from './gc/global_chat.socket.js';
+import { roomChat } from './rooms/room_chat.socket.js';
+import { DM } from './dms/dm_socket.socket.js';
 
 export const user_socket_map = new Map();
 
-export default function socketSetup(server) {
+export default function socket(server) {
     const io = new Server(server, {
         cors: {
-            origin: "*",
+            origin: process.env.FRONTEND_URL,
         }
     });
 

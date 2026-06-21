@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import pool from '../api_utils/db.js';
+import pool from '../utils/db.js';
 import {
     DatabaseOrServerError,
     DBIntegrityError,

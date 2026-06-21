@@ -4,7 +4,7 @@ import {
     RoomSizeExceeded
 } from "../../error_classes/defined_errors.js";
 
-import pool from "../api_utils/db.js";
+import pool from "../utils/db.js";
 
 export async function getRooms(constraint, user_id, last_seen_id, room_id) {
     let result;

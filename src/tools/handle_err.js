@@ -1,5 +1,5 @@
 
-export function globalErrHandler(err, req, res, next){
+export default function processErr(err, req, res, next){
     console.error("Unexpected error:", err);
 
     if (err.is_expected){

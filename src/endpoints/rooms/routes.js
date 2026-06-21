@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { authorizeToken } from "../auth/auth.middleware.js";
+import { authorizeToken } from "../auth/middleware.js";
 
 import { 
     checkGetARoomParams,
@@ -21,7 +21,7 @@ import {
     handleUpdateRooms
 } from "./rooms.controller.js";
 
-import { upload } from "../api_utils/file_storage.js";
+import { upload } from "../utils/storage.js";
 
 const rooms_router = Router();
 
